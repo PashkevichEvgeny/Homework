@@ -5,9 +5,11 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.Clear();
-Console.Write("Введите первое число: ");
-int firstNumber = int.Parse(Console.ReadLine()!);
+using System;
+
+System.Console.Clear();
+System.Console.Write("Введите первое число: ");
+int firstNumber = int.Parse(System.Console.ReadLine()!);
 Console.Write("Введите второе число: ");
 int secondNumber = int.Parse(Console.ReadLine()!);
 Console.Write("Введите третье число: ");
