@@ -5,12 +5,12 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.Clear();
+// Console.Clear();
 // Математический способ
 
 Console.Write("Введите пятизначное число: ");
 int n = int.Parse(Console.ReadLine()!);
-
+int copyN = n;
 // Проверка на длину
 // while (n < 10000 || n > 99999)
 // {
@@ -23,7 +23,22 @@ if (n / 10000     == n % 10 &&
     Console.WriteLine("да");
 else
     Console.WriteLine("нет");
-
+    
+int revers = 0;
+while (n > 0)
+{
+    revers = (revers + n % 10) * 10;
+    n /= 10;
+}
+revers /= 10;
+if (revers == copyN)
+{
+    Console.WriteLine("Число палиндром");
+}
+else
+{
+    Console.WriteLine("No It's not palindrome");
+}
 /*
 // Строковый способ
 Console.Write("Введите пятизначное число: ");
