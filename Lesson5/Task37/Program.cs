@@ -5,7 +5,7 @@
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
 
-Console.Clear();
+// Console.Clear();
 
 // Метод создающий из пользовательского ввода чисел целочисленный массив
 int[] UserArray()
@@ -43,7 +43,7 @@ int[] FoldedArray(int[] array)
         else
         {
             // Запись остальных элементов массива
-            fold[i] = array[i] + array[len - i - 1];
+            fold[i] = array[i] * array[len - i - 1];
         }
     }
     // Возврат полученного массива
